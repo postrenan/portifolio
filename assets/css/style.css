@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-bg);
+    font: 'Helvetica';
+    
+}
+
+:root{
+    --primary-bg: #121f28;
+    --second-bg: #16232c;
+    --primary-btn: #ff715b;
+    --primary-text: #f1f0ee;
+    --second-text: #454f58;
+    --third-text:  #ff715b;
+}
+
