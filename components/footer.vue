@@ -4,13 +4,13 @@
         <div class="left">
           <h2><span class="attention">___________</span> Contato</h2>
           <p class="text">Possui um projeto?<br>Vamos tirar ele do papel!</p>
-          <button class="btn">Enviar</button>
+          <button class="btn"  @click="enviar">Enviar</button>
         </div>
         <div class="right">
-          <form>
-            <input type="text" id="name" name="name" placeholder="Nome">
-            <input type="email" id="email" name="email" placeholder="Email">
-            <textarea class="description" id="description" name="description" placeholder="Mensagem"></textarea>
+          <form  @submit.prevent="enviar">
+            <input type="text" id="name" v-model="name" placeholder="Nome">
+            <input type="email" id="email" v-model="email" placeholder="Email">
+            <textarea class="description" id="description" v-model="description" placeholder="Mensagem"></textarea>
           </form>
         </div>
       </section>
@@ -26,6 +26,48 @@
       </footer>
     </div>
   </template>
+
+<script setup>
+ import { ref } from 'vue';
+
+const time = 2024;
+const name = ref('');
+const email = ref('');
+const description = ref('');
+
+// Função de envio de e-mail
+const enviar = () => {
+  if (name.value && email.value && description.value) {
+    Email.send({
+      Host: 'smtp.gmail.com',
+      Username: email.value,
+      Password: '',
+      To: 'renanbickdev@gmail.com',
+      From: email.value,
+      Subject: 'Email enviado pelo portfólio',
+      Body: description.value,
+    })
+    .then(function (message) {
+      alert('Mail sent successfully');
+    })
+    .catch(function (error) {
+      alert('Erro ao enviar o e-mail: ' + error);
+    });
+  } else {
+    alert('Por favor, preencha todos os campos!');
+  }
+};
+
+// Adicionando o script SMTPJS de forma dinâmica (caso você use Vue 3)
+import { onMounted } from 'vue';
+
+onMounted(() => {
+  const script = document.createElement('script');
+  script.src = 'https://smtpjs.com/v3/smtp.js';
+  document.head.appendChild(script);
+});
+
+</script>
   
   <style scoped>
   .all {
@@ -218,9 +260,6 @@
     }
   }
   </style>
-  
-  <script setup>
-  var time = 2024;
-  </script>
+
   
   

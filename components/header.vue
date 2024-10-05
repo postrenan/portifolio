@@ -19,7 +19,7 @@
                 <a class="btn_2" href="https://drive.google.com/file/d/1hhPDq25KtqgScEWb3krwgsMBcThUYNFF/view?usp=sharing" target="_blank">Meu curriculo</a>
             </div>
         </div>
-        <img class="img" src="/assets/images/img.jpg">
+        <p>{{ repos }}</p>
     </section>
     <section class="langs">
             <p>HTML5</p>
@@ -33,6 +33,10 @@
             <p>Postgres</p>
     </section>
 </template>
+
+<script>
+
+</script>
 
 <style scoped>
 .title, .title_1, .title_2, .title_3{

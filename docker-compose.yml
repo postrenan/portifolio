@@ -1,10 +1,10 @@
 version: "1"
 
 services:
-  container-test:
-    container_name: container-test
+  container-portifolio:
+    container_name: portifolio
     build:
       context: .
       dockerfile: Dockerfile
     ports:
-      - "3510:3000"
+      - "3500:3000"
