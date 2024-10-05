@@ -1,11 +1,12 @@
 <template>
-    <navbar class="navbar">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <navbar class="navbar" id="home">
         <h2 class="title">Renan Bick</h2>
         <div class="btns">
-            <button class="btn">Home </button>
-            <button class="btn">Sobre</button>
-            <button class="btn">Projetos</button>
-            <button class="btn">Contato</button>
+            <button class="btn"><a href='#home'>Home</a></button>
+            <button class="btn"><a href='#projects'>Projetos</a></button>
+            <button class="btn"><a href="#about">Sobre</a></button>
+            <button class="btn"><a href='#contact'>Contato</a></button>
         </div>
     </navbar>
     <section class="presentation">
@@ -14,14 +15,14 @@
             <h3 class="title_2"><span class="attention">__________</span> Sou o Renan</h3>
             <h3 class="title_3">Desenvolvedor de Software</h3>
             <div>
-                <button class="btn_1">Possui um ideia?</button>
-                <button class="btn_2">Meu curriculo</button>
+                <button class="btn_1"><a class="a" href="#contact">Possui um ideia?</a></button>
+                <a class="btn_2" href="https://drive.google.com/file/d/1hhPDq25KtqgScEWb3krwgsMBcThUYNFF/view?usp=sharing" target="_blank">Meu curriculo</a>
             </div>
         </div>
-        <img class="img" src="/assets/css/img.jpg">
+        <img class="img" src="/assets/images/img.jpg">
     </section>
     <section class="langs">
-            <p >HTML5</p>
+            <p>HTML5</p>
             <p>CSS</p>
             <p>Javascript</p>
             <p>Node.js</p>
@@ -55,13 +56,26 @@
     margin: 25px 150px 50px 150px;
 }
 
+a{
+    text-decoration: none;
+    color:inherit;
+}
+
+.a{
+    background-color: var(--primary-btn);
+
+}
+
 .navbar .btn{
     border: none;
     margin: 10px;
+    background-color: inherit;
 }
 
 .navbar .btn:hover{
-    color: var(--third-text)
+    color: var(--third-text);
+    cursor: pointer;
+
 }
 
 .presentation{
@@ -102,6 +116,7 @@
 
 .btn_1 , .btn_2:hover{
   background-color: var(--primary-btn);
+  cursor: pointer;
 }
 
 .langs{
@@ -119,4 +134,49 @@ p{
     color: var(--second-text);
 }
 
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        margin: 25px 20px;
+    }
+
+    .presentation {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .texts {
+        width: 90vw;
+        margin: 20px 0;
+    }
+
+    .img {
+        width: 90vw;
+        margin: 20px 0;
+    }
+
+    .title, .title_1, .title_2, .title_3 {
+        font-size: 28px;
+    }
+
+    .btn {
+        font-size: 18px;
+    }
+
+    .btn_1, .btn_2 {
+        margin: 20px 10px;
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    .langs {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    p {
+        font-size: 28px;
+        margin: 10px;
+    }
+}
 </style>
