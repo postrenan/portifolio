@@ -1,72 +1,19 @@
 <template>
     <div class="all" id="contact">
-      <section class="contact">
-        <div class="left">
-          <h2><span class="attention">___________</span> Contato</h2>
-          <p class="text">Possui um projeto?<br>Vamos tirar ele do papel!</p>
-          <button class="btn"  @click="enviar">Enviar</button>
-        </div>
-        <div class="right">
-          <form  @submit.prevent="enviar">
-            <input type="text" id="name" v-model="name" placeholder="Nome">
-            <input type="email" id="email" v-model="email" placeholder="Email">
-            <textarea class="description" id="description" v-model="description" placeholder="Mensagem"></textarea>
-          </form>
-        </div>
-      </section>
-  
+      
       <footer class="footer">
         <h2 class="ftext">Renan Bick</h2>
         <p class="ftext">@{{time}}. All Rights Reserved</p>
         <div class="ftext">
-          <button><i class="fab fa-github"></i></button>
-          <button><i class="fab fa-instagram"></i></button>
-          <button><i class="fab fa-linkedin"></i></button>
+          <a href="https://github.com/postrenan" target="_blank"><i class="fab fa-github" ></i></a>
+          <a href="https://www.linkedin.com/in/renan-bick/" target="_blank"><i class="fab fa-linkedin"></i></a>
         </div>
       </footer>
     </div>
   </template>
 
 <script setup>
- import { ref } from 'vue';
-
 const time = 2024;
-const name = ref('');
-const email = ref('');
-const description = ref('');
-
-// Função de envio de e-mail
-const enviar = () => {
-  if (name.value && email.value && description.value) {
-    Email.send({
-      Host: 'smtp.gmail.com',
-      Username: email.value,
-      Password: '',
-      To: 'renanbickdev@gmail.com',
-      From: email.value,
-      Subject: 'Email enviado pelo portfólio',
-      Body: description.value,
-    })
-    .then(function (message) {
-      alert('Mail sent successfully');
-    })
-    .catch(function (error) {
-      alert('Erro ao enviar o e-mail: ' + error);
-    });
-  } else {
-    alert('Por favor, preencha todos os campos!');
-  }
-};
-
-// Adicionando o script SMTPJS de forma dinâmica (caso você use Vue 3)
-import { onMounted } from 'vue';
-
-onMounted(() => {
-  const script = document.createElement('script');
-  script.src = 'https://smtpjs.com/v3/smtp.js';
-  document.head.appendChild(script);
-});
-
 </script>
   
   <style scoped>
@@ -172,7 +119,7 @@ onMounted(() => {
     background-color: var(--second-bg);
   }
   
-  .ftext button {
+  .ftext a {
     background-color: var(--second-bg);
     border: none;
     font-size: 20px;
@@ -183,7 +130,7 @@ onMounted(() => {
     
   }
   
-  .ftext button:hover {
+  .ftext a:hover {
     transform: scale(1.2);
   }
   
@@ -255,7 +202,7 @@ onMounted(() => {
       padding: 10px 0;
     }
   
-    .ftext button {
+    .ftext a {
       font-size: 18px;
     }
   }

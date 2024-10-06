@@ -33,8 +33,7 @@
               <tag>Vue.js</tag>
             </div>
             <p class="text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam sequi corporis repellat perspiciatis animi, rerum voluptatem vel inventore magnam commodi, similique labore quos delectus modi eum officiis! Voluptatem, qui ut.
-            </p>
+              Projeto FakeStore feito como um desafio, no projeto utilizei Vue.js 3, TypeScript e Tailwind. O projeto consiste em fazer requisições para a Fake Store API para consumir os produtos, atualizar e deleta-los. Seguem imagens do projeto</p>
             <button aria-label="Ver projeto FakeStore"><a href="https://github.com/postrenan/FakeStore" target="_blank">Ver projeto </a><i  class="fa fa-link"></i></button>
           </div>
         </article>
@@ -48,7 +47,7 @@
               <tag>Vue.js</tag>
             </div>
             <p class="text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam sequi corporis repellat perspiciatis animi, rerum voluptatem vel inventore magnam commodi, similique labore quos delectus modi eum officiis! Voluptatem, qui ut.
+              Este projeto é para o clã Urutu com o objetivo de ajudar os jogadores com estatísticas e informações do jogo além das novidades decorrentes das atualizações. Além do site ser uma forma de tentar atrair jogadores para o clã.
             </p>
             <button aria-label="Ver projeto Urutu"><a href="https://github.com/postrenan/Urutu" target="_blank">Ver projeto</a><i  class="fa fa-link"></i></button>
           </div>
@@ -69,7 +68,7 @@
               <tag>Vue.js</tag>
             </div>
             <p class="text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam sequi corporis repellat perspiciatis animi, rerum voluptatem vel inventore magnam commodi, similique labore quos delectus modi eum officiis! Voluptatem, qui ut.
+              Esse projeto de linktree foi desenvolvido para minha família pois possuem uma agência de viagens e queríamos que os nossos clientes tivessem um contato mais rápido conosco enquanto estivessem vendo nossa página do Instagram, o linktree conta com dois botões de redirecionamento para WhatsApp diferentes
             </p>
             <button aria-label="Ver projeto Grandtour Linktree"><a href="https://github.com/postrenan/GrandtourLinkTree" target="_blank">Ver projeto</a> <i class="fa fa-link"></i></button>
           </div>

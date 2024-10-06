@@ -19,12 +19,8 @@
                 <a class="btn_2" href="https://drive.google.com/file/d/1hhPDq25KtqgScEWb3krwgsMBcThUYNFF/view?usp=sharing" target="_blank">Meu curriculo</a>
             </div>
         </div>
-        <p>{{ repos }}</p>
     </section>
     <section class="langs">
-            <p>HTML5</p>
-            <p>CSS</p>
-            <p>Javascript</p>
             <p>Node.js</p>
             <p>Vue.js</p>
             <p>Git</p>
@@ -33,10 +29,6 @@
             <p>Postgres</p>
     </section>
 </template>
-
-<script>
-    
-</script>
 
 <style scoped>
 .title, .title_1, .title_2, .title_3{
