@@ -9,7 +9,7 @@
         <div class="history">
             <h3 class="title">Sobre mim</h3>
             <p class="text">
-                Eu comecei a minha jornada no desenvolvimento após sair do exército e entrar na faculdade no ano de 2020, de lá para cá estudei linguagens de baixo e alto nível, além de metodologias e design. Dentro da área de desenvolvimento, sempre tive mais facilidade com linguagens web e desenvolvimento de UI. O resultado do estudo se transformou em:
+                Comecei a minha jornada no desenvolvimento após sair do exército e entrar na faculdade no ano de 2020, de lá para cá estudei linguagens de baixo e alto nível, além de metodologias e design. Dentro da área de desenvolvimento, sempre tive mais facilidade com linguagens web e desenvolvimento de UI. O resultado do estudo se transformou em:
             </p>
             <div class="metrics">
                 <div class="metric">
