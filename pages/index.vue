@@ -3,6 +3,7 @@
     <head>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     </head>
+    <h2>deploy automatico!</h2>
     <Header/>
     <Projects/>
     <About/>
@@ -14,5 +15,4 @@ import About from '~/components/about.vue';
 import Footer from '~/components/footer.vue';
 import Header from '~/components/header.vue';
 import Projects from '~/components/projects.vue';
-
 </script>
